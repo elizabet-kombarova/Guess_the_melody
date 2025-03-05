@@ -1,0 +1,65 @@
+﻿<Window x:Class="Угадай_мелодию.Регистрация"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Угадай_мелодию"
+        mc:Ignorable="d"
+        Icon="/Фото/иконка.ico"
+        Title="Угадай мелодию" Height="600" Width="650" Background="#FF8E0038" FontFamily="Gilroy" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="{x:Null}"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Style.Resources>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button Content="Справка" Height="35" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="5" Click="Spravka_Click" Background="#FFD10058" Foreground="#FFF8F3A2"/>
+
+        <Label Content="Регистрация" Grid.ColumnSpan="5" Grid.RowSpan="2" Margin="0,-27,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="50" />
+        <Label Content="Пользователь" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"  Margin="20,7,75,17" Foreground="#FFF8F3A2" FontSize="20" />
+
+        <ComboBox ToolTip="Выберете пользователя" Name="tbUser" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" Width="300" Height="30"  Foreground="Black" BorderBrush="#d2601a" FontSize="15" BorderThickness="0, 0, 0, 0" SelectionChanged="tbUser_SelectionChanged">
+            <ComboBoxItem Content="Игрок"/>
+        </ComboBox>
+
+        <Label Content="" Name="lb" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"  Margin="20,7,75,17" Foreground="#FFF8F3A2" FontSize="20" FontFamily="Gilroy" />
+
+        <PasswordBox Visibility="Hidden" Name="passwordBox" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" Width="300"  Foreground="Black" FontSize="15" BorderThickness="0, 0, 0, 0" />
+        <TextBox  Visibility="Hidden" Name="tbName" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" Width="300"  Foreground="Black" FontSize="15" BorderThickness="0, 0, 0, 0" />
+        <Image Grid.Column="3" Grid.Row="2" Grid.RowSpan="5" Grid.ColumnSpan="2" Height="300"  Source="/Фото/персн1.png" />
+
+        <Button x:Name="Vhod" Content="Войти" Grid.Row="7" Grid.RowSpan="2" Grid.Column="0"  Grid.ColumnSpan="3" Width="250" Height="60" FontSize="25" Click="Vhod_Click" >
+            <Button.BitmapEffect>
+                <DropShadowBitmapEffect Color="#FFF8F3A2" Direction="320" Softness="1" ShadowDepth="5" Opacity="0.3" />
+            </Button.BitmapEffect>
+        </Button>
+    </Grid>
+</Window>
+

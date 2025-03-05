@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Угадай мелодию", "Угадай мелодию.csproj", "{2F3C075B-97B9-445A-A26E-6F651B0FBD8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestGuessTheMelody", "..\UnitTestGuessTheMelody\UnitTestGuessTheMelody.csproj", "{5DA5E48F-F137-4AFE-8FB1-11B5C4256E4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F3C075B-97B9-445A-A26E-6F651B0FBD8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3C075B-97B9-445A-A26E-6F651B0FBD8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3C075B-97B9-445A-A26E-6F651B0FBD8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3C075B-97B9-445A-A26E-6F651B0FBD8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA5E48F-F137-4AFE-8FB1-11B5C4256E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA5E48F-F137-4AFE-8FB1-11B5C4256E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA5E48F-F137-4AFE-8FB1-11B5C4256E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA5E48F-F137-4AFE-8FB1-11B5C4256E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA5881F0-8111-45D9-82F9-4776DDAB7B42}
+	EndGlobalSection
+EndGlobal
